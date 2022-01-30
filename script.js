@@ -160,7 +160,12 @@ function showStatus()
       textArea.innerText += "VOUS REMPORTEZ LA VICTOIRE!";
     }
     else{
-      textArea.innerText += "LE CROUPIER REMPORTE LA VICTOIRE!";
+      if (playerScore === dealerScore){
+        textArea.innerText += "MATCH NUL";
+      }
+      else {
+        textArea.innerText += "LE CROUPIER REMPORTE LA VICTOIRE!";
+      }
     }
     newGameButton.style.display = 'inline';
     hitButton.style.display = 'none';
