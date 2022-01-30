@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'hundin';
+    src : url('assets/hun2.ttf') format('truetype');
+}
+
+body {
+    font-family: hundin;
+    color: white;
+    background-color: #111111;
+    font-size: 150%;
+}
+
+button {
+    font-family: hundin;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.25s, color 0.25s;
+  }
